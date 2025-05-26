@@ -11,4 +11,6 @@ public interface ILivroDAO extends CrudRepository<Livro, Long>{
 	List<Livro> findAll();
 
 	Livro findById(long id);
+	
+	List<Livro> findAllByOrderByPrecoAsc();
 }
